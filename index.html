@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3Web links by Ak k</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <button id="music-btn">Play Music 🎵</button>
+  <audio id="bg-music" loop>
+    <source src="ethereal-night-loop-274337.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <ul>
+    <li>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="facebook.png.svg" alt="Facebook" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        <span>Facebook</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://twitter.com/login?" target="_blank">
+        <img src="x.png.svg" alt="Twitter" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        <span>Twitter</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="instagram.png.svg" alt="Instagram" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        <span>Instagram</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="youtube.png.svg" alt="YouTube" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        <span>YouTube</span>
+      </a>
+    </li>
+  </ul>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const playBtn = document.getElementById("music-btn");
+
+    playBtn.addEventListener
+    ("click", () => {
+      music.play();
+      playBtn.style.display = "none";
+     }
+    );
+  </script>
+</body>
+</html>

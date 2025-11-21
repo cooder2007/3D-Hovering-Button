@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #fbc2eb, #8ec5fc, #e0c3fc,#f5576c);
+  background-size: 400% 400%;
+  animation: gradientBG 14s ease infinite;
+  overflow: hidden;
+}
+
+#music-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+ ul{ 
+position: absolute; 
+top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); 
+display: flex;
+ margin: 0;
+ padding: 0;
+ }
+
+ ul li {
+ list-style: none;
+ margin: 0 5px;
+ }
+
+ ul li a .fa{ 
+font-size: 40px; 
+color: #262626; 
+line-height: 80px;
+ transition: 0.5s;
+ padding-right: 14px;
+ }
+
+ ul li a span{ 
+padding: 0; 
+margin: 0;
+ position: absolute;
+ top: 30px; 
+color: #262626;
+ letter-spacing: 4px;
+ transition: 0.5s; 
+} 
+
+ul li a {
+ text-decoration: none; 
+display: absolute; 
+display: block;
+ width: 210px; 
+height: 80px;
+ background: #fff;
+ text-align: left; 
+padding-left: 20px; 
+transform: rotate(-30deg) skew(25deg) translate(0,0);
+ transition: 0.5s;
+ box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5); 
+}
+
+ ul li a:before{ 
+content: "";
+ position: absolute; 
+top: 10px;
+ left: -20px; 
+height: 100%;
+ width: 20px; 
+background: #b1b1b1;
+ transform: 0.5s;
+ transform: rotate(0deg) skewY(-45deg); 
+} 
+
+ul li a:after{
+ content: "";
+ position: absolute; 
+bottom: -20px;
+ left: -10px; 
+height: 20px; 
+width: 100%; 
+background: #b1b1b1; 
+transform: 0.5s; 
+transform: rotate(0deg) skewX(-45deg);
+ } 
+
+ul li a:hover {
+ transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+ box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5); 
+}
+
+ ul li:hover .fa{
+ color: #fff;
+ } 
+
+ul li:hover:nth-child(1) a{ 
+background: #6495ED; 
+} 
+
+ul li:hover:nth-child(1) a:before{
+ background: #0000FF; 
+}
+
+ ul li:hover:nth-child(1) a:after{
+ background: #00008B; 
+}
+
+ ul li:hover:nth-child(2) a{ 
+background: #7FFFD4; 
+}
+
+ ul li:hover:nth-child(2) a:before{ 
+background: #00FFFF;
+ } 
+
+ul li:hover:nth-child(2) a:after{ 
+background: #00BFFF;
+ }
+ ul li:hover:nth-child(3) a{
+ background: #FF1493; 
+}
+
+ ul li:hover:nth-child(3) a:before{
+ background: #B22222; 
+}
+
+ ul li:hover:nth-child(3) a:after{ 
+background: #DC143C;
+ }
+
+ ul li:hover:nth-child(4) a{
+ background: #e4405f; 
+}
+
+ ul li:hover:nth-child(4) a:before{
+ background: #d81c3f; 
+} 
+
+ul li:hover:nth-child(4) a:after{
+ background: #e46880;
+ } 
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
